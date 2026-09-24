@@ -202,6 +202,10 @@ while ejecutando:
 				Neil_Armstrong.fire_sin()
 			
 		#mouse
+		elif evento.type == MOUSEBUTTONDOWN:
+			if evento.button == 1:
+				for btn in lista_botones:
+					btn.verificar_click(evento.pos)
 
 
 	if finish != True:
