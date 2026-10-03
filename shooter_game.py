@@ -43,12 +43,11 @@ text_puntaje = font3.render('PUNTAJE', 1, (230, 230, 230))
 text_fallos = font3.render('FALLOS', 1, (230, 230, 230))
 
 # Imágenes
-img_back = "galaxy.jpg"
 img_hero = "player.png"
 img_Enemy = "enemy.png"
 img_bullet = "bala.png"
 img_bullet_desviada = "bala_desviada.png"
-img_bullet_bomba = "enemy.png"
+img_bullet_bomba = "bala_bomba.png"
 img_fondo = "fondo.jpg"
 img_titulo = "titulo.png"
 img_score = 'score.png'
@@ -248,13 +247,13 @@ while ejecutando:
                 pausa = not pausa
     
             if not pausa and estado_juego == 'juego':
-                if evento.key == K_SPACE:
+                if evento.key == K_q:
                     Neil_Armstrong.fire()
 
-                if evento.key == K_LSHIFT:
+                if evento.key == K_w:
                     Neil_Armstrong.bomb()
 
-                if evento.key == K_RSHIFT:
+                if evento.key == K_e:
                     Neil_Armstrong.fire_sin()
      
         elif evento.type == MOUSEBUTTONDOWN:
