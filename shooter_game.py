@@ -5,8 +5,8 @@ from random import randint
 # estadisticas
 score = 0
 lost = 0
-goal = 21
-max_lost = 5 
+goal = 11
+max_lost = 6
 
 # musica y sonidos
 mixer.init()
@@ -30,9 +30,9 @@ font5_instrucciones = font.Font(None, 24)
 
 text_esc = font5_instrucciones.render('Presiona ESC para pausar', 1, (255, 255, 255))
 text_direccion = font5_instrucciones.render('Flechas DERECHA e IZQUIERDA para moverte', 1, (255, 255, 255))
-text_disparar = font5_instrucciones.render('ESPACIO para disparar', 1, (255, 255, 255))
-text_bomba = font5_instrucciones.render('SHIFT IZQ para lanzar bombas', 1, (255, 255, 255))
-text_especial = font5_instrucciones.render('SHIFT DER para lanzar laceres especiales', 1, (255, 255, 255))
+text_disparar = font5_instrucciones.render('Q para disparo normal', 1, (255, 255, 255))
+text_bomba = font5_instrucciones.render('W para lanzar bombas', 1, (255, 255, 255))
+text_especial = font5_instrucciones.render('E para lanzar laceres especiales', 1, (255, 255, 255))
 
 win = font1.render('YEA WIN', True, (255, 255, 0))
 lose = font1.render('HA HA LOSER', True, (119, 240, 50))
